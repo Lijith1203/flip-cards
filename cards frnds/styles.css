@@ -1,0 +1,774 @@
+.{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 300px;
+    gap: 20px;
+  }
+  .card-1 {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+  
+  .card-1 img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .front-face-1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 0px 10px white;
+    backface-visibility: hidden;
+    border-radius: 10%;
+    overflow: hidden;
+  }
+  
+  .back-face-1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px white;
+    text-align: center;
+    backface-visibility: hidden;
+    border-radius: 10%;
+    background: white;
+  }
+  .back-face-1 span {
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: black;
+    transition: all 0.4s;
+  }
+  .back-face-1 span:hover {
+    transform: scale(1.06);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    background: #2f2e2e;
+  }
+  
+  .card-1:hover,
+  .back-face-1 {
+    transform: rotatey(-180deg);
+  }
+  
+  /* card 2 */
+  
+  .card-2 {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+  
+  .card-2 img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .front-face-2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 0px 10px white;
+    backface-visibility: hidden;
+    border-radius: 10%;
+    overflow: hidden;
+  }
+  .back-face-2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px white;
+    text-align: center;
+    backface-visibility: hidden;
+    border-radius: 10%;
+    background: white;
+  }
+  .back-face-2 span {
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: black;
+    transition: all 0.4s;
+  }
+  .back-face-2 span:hover {
+    transform: scale(1.06);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    background: #2f2e2e;
+  }
+  .card-2:hover,
+  .back-face-2 {
+    transform: rotatey(-180deg);
+  }
+  .card-3 {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+  
+  .card-3 img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .front-face-3 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 0px 10px white;
+    backface-visibility: hidden;
+    border-radius: 10%;
+    overflow: hidden;
+  }
+  
+  .back-face-3 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px white;
+    text-align: center;
+    backface-visibility: hidden;
+    border-radius: 10%;
+    background: white;
+  }
+  .back-face-3 span {
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: black;
+    transition: all 0.4s;
+  }
+  .back-face-3 span:hover {
+    transform: scale(1.06);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    background: #2f2e2e;
+  }
+  
+  .card-3:hover,
+  .back-face-3 {
+    transform: rotatey(-180deg);
+  }
+  .card-4 {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+  
+  .card-4 img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .front-face-4 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 0px 10px white;
+    backface-visibility: hidden;
+    border-radius: 10%;
+    overflow: hidden;
+  }
+  
+  .back-face-4 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px white;
+    text-align: center;
+    backface-visibility: hidden;
+    border-radius: 10%;
+    background: white;
+  }
+  .back-face-4 span {
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: black;
+    transition: all 0.4s;
+  }
+  .back-face-4 span:hover {
+    transform: scale(1.06);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    background: #2f2e2e;
+  }
+  
+  .card-4:hover,
+  .back-face-4 {
+    transform: rotatey(-180deg);
+  }
+  .{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 300px;
+    gap: 20px;
+  }
+  .card-5 {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+  
+  .card-5 img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .front-face-5 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 0px 10px white;
+    backface-visibility: hidden;
+    border-radius: 10%;
+    overflow: hidden;
+  }
+  
+  .back-face-5 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px white;
+    text-align: center;
+    backface-visibility: hidden;
+    border-radius: 10%;
+    background: white;
+  }
+  .back-face-5 span {
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: black;
+    transition: all 0.4s;
+  }
+  .back-face-5 span:hover {
+    transform: scale(1.06);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    background: #2f2e2e;
+  }
+  
+  .card-5:hover,
+  .back-face-5 {
+    transform: rotatey(-180deg);
+  }
+  .{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 300px;
+    gap: 20px;
+  }
+  .card-6 {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+  
+  .card-6 img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .front-face-6 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 0px 10px white;
+    backface-visibility: hidden;
+    border-radius: 10%;
+    overflow: hidden;
+  }
+  
+  .back-face-6 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px white;
+    text-align: center;
+    backface-visibility: hidden;
+    border-radius: 10%;
+    background: white;
+  }
+  .back-face-6 span {
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: black;
+    transition: all 0.4s;
+  }
+  .back-face-6 span:hover {
+    transform: scale(1.06);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    background: #2f2e2e;
+  }
+  
+  .card-6:hover,
+  .back-face-6 {
+    transform: rotatey(-180deg);
+  }
+  .{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 300px;
+    gap: 20px;
+  }
+  .card-7 {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+  
+  .card-7 img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .front-face-7 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 0px 10px white;
+    backface-visibility: hidden;
+    border-radius: 10%;
+    overflow: hidden;
+  }
+  
+  .back-face-7 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px white;
+    text-align: center;
+    backface-visibility: hidden;
+    border-radius: 10%;
+    background: white;
+  }
+  .back-face-7 span {
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: black;
+    transition: all 0.4s;
+  }
+  .back-face-7 span:hover {
+    transform: scale(1.06);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    background: #2f2e2e;
+  }
+  
+  .card-7:hover,
+  .back-face-7 {
+    transform: rotatey(-180deg);
+  }
+  .{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 300px;
+    gap: 20px;
+  }
+  .card-8 {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+  
+  .card-8 img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .front-face-8 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 0px 10px white;
+    backface-visibility: hidden;
+    border-radius: 10%;
+    overflow: hidden;
+  }
+  
+  .back-face-8 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px white;
+    text-align: center;
+    backface-visibility: hidden;
+    border-radius: 10%;
+    background: white;
+  }
+  .back-face-8 span {
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: black;
+    transition: all 0.4s;
+  }
+  .back-face-8 span:hover {
+    transform: scale(1.06);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    background: #2f2e2e;
+  }
+  
+  .card-8:hover,
+  .back-face-8 {
+    transform: rotatey(-180deg);
+  }
+  .{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 300px;
+    gap: 20px;
+  }
+  .card-9 {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+  
+  .card-9 img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .front-face-9 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 0px 10px white;
+    backface-visibility: hidden;
+    border-radius: 10%;
+    overflow: hidden;
+  }
+  
+  .back-face-9 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px white;
+    text-align: center;
+    backface-visibility: hidden;
+    border-radius: 10%;
+    background: white;
+  }
+  .back-face-9 span {
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: black;
+    transition: all 0.4s;
+  }
+  .back-face-9 span:hover {
+    transform: scale(1.06);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    background: #2f2e2e;
+  }
+  
+  .card-9:hover,
+  .back-face-9 {
+    transform: rotatey(-180deg);
+  }
+  .{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 300px;
+    gap: 20px;
+  }
+  .card-10 {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+  
+  .card-10 img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .front-face-10 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 0px 10px white;
+    backface-visibility: hidden;
+    border-radius: 10%;
+    overflow: hidden;
+  }
+  
+  .back-face-10 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px white;
+    text-align: center;
+    backface-visibility: hidden;
+    border-radius: 10%;
+    background: white;
+  }
+  .back-face-10 span {
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: black;
+    transition: all 0.4s;
+  }
+  .back-face-10 span:hover {
+    transform: scale(1.06);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    background: #2f2e2e;
+  }
+  
+  .card-10:hover,
+  .back-face-10 {
+    transform: rotatey(-180deg);
+  }
+  .{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 300px;
+    gap: 20px;
+  }
+  .card-11 {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+  
+  .card-11 img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .front-face-11 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 0px 10px white;
+    backface-visibility: hidden;
+    border-radius: 10%;
+    overflow: hidden;
+  }
+  
+  .back-face-11 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px white;
+    text-align: center;
+    backface-visibility: hidden;
+    border-radius: 10%;
+    background: white;
+  }
+  .back-face-11 span {
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: black;
+    transition: all 0.4s;
+  }
+  .back-face-11 span:hover {
+    transform: scale(1.06);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    background: #2f2e2e;
+  }
+  
+  .card-11:hover,
+  .back-face-11 {
+    transform: rotatey(-180deg);
+  }
+  .l{
+    color: yellow;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 100;
+    font
+  }
+  .i{
+    color:white;
+    font: 3rem ;
+    font-weight: 100;
+    padding: auto;
+  }
+  .c{
+    color: white;
+    width: 5%;
+    padding: 3%;
+    font-size: 40px;
+  }
+  .ff{
+    color: yellow;
+  }
+  
